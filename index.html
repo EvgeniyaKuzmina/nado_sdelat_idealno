@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Надо сделать идеально</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">   <!--чтобы при изменении размера экрана вся показываемая ширина страницы помещалась в ширину экрана, без увеличения или уменьшения -->
+  <meta name="description" content="Страница о взгляде на перфекционизм в работе и учёбе.">
+
+  <meta property="og:title" content="Надо сделать идеально">
+  <meta property="og:description" content="Страница о взгляде на перфекционизм в работе и учёбе.">
+  <meta property="og:url" content="http://127.0.0.1:3000/index.html"> <!-- ссылка на сайт-->
+  <meta property="og:image" content="./images/og.jpg"> <!-- ссылка на картинку-->
+  <meta property="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="./images/icon.ico" sizes="any"> <!--sizes="any". Этот атрибут чинит неправильное поведение некоторых браузеров, когда они выбирают ICO-файл вместо SVG, хотя умеют работать и с последним. Размеры ICO — 32 x 32 пикселя.-->
+  <link rel="icon" href="./images/icon.svg" type="image/svg+xml"> <!-- мы подключаем фавикон в формате SVG. Это самый предпочтительный формат. -->
+  <link rel="apple-touch-icon" href="./images/apple-touch-icon.png"> <!--на случай, если пользователь захочет добавить сайт в виде иконки на смартфоне или планшете. Размеры PNG  512 x 512 пикселей, 
+                                               На iPhone и iPad это можно сделать, выбрав пункт «Добавить на экран Домой». Тогда в виде иконки будет использоваться как раз PNG-картинка из третьей строчки.-->
+  
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/style.css">
+
+  
+</head>
+
+<body>
+  <h1 class = "title__heading">
+    <span class = "title">Надо</span>
+    <span  class = "title">сделать</span>
+    <span class = "title">идеально*</span></h1>
+  <video poster = "./images/poster.jpg" autoplay muted loop>
+    <source src="./video/cover-video.webm" type="video/webm">
+    <source src="./video/cover-video.mp4" type="video/mp4">
+  </video>
+
+</body>
+
+</html>

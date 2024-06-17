@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    position: relative;
+    min-width: 800px;
+    display: flex;
+    justify-content: center;
+
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.30);
+    z-index: 2;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+}
+
+.title__heading {
+    z-index: 2;
+    margin-top: 60px;
+    margin-bottom: 432px;
+}
+
+
+.title {
+    display: block;
+    color: #000;
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    font-size: 116px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 4.06px;
+    text-transform: uppercase;
+}
+
+.title__heading:hover::before {
+    content: "На самом деле нет.\AВажнее &mdash; научиться ошибаться.";
+    white-space: pre;
+    position: absolute;
+    top: 182px;
+    right: 22px;
+    width: 746px;
+    height: 158px;
+    padding: 36px 44px;
+    border-radius: 20px;
+    border: 2px solid #000;
+    background: #FFF;
+    box-shadow: 0 14px 0 #000;
+    color: #000;
+    font-family: Raleway;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    
+
+}
+
+.title__heading:hover {
+    /*не работает. Не понимаю как поменять цвет надписи при всплывающем тултипе*/
+    color: #4C4C4C;
+
+}
