@@ -96,12 +96,10 @@ video {
     font-style: normal;
     font-weight: 400;
     line-height: 35px;
-    
 
 }
 
-.title__heading:hover {
-    /*не работает. Не понимаю как поменять цвет надписи при всплывающем тултипе*/
+.title__heading:hover .title {
     color: #4C4C4C;
 
 }
